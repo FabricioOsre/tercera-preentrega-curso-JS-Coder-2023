@@ -141,38 +141,3 @@ document.addEventListener("carritoActualizado", function () {
     numeritoEnOtraPagina.textContent = autosEnCarrito.length;
   }
 });
-
-////*********Botón de login - Tampoco salió pero no me tira error*/
-
-const botonInicio = document.getElementById("botonInicio");
-
-const usuarioAutorizado = "jorge";
-const passAutorizado = "1234";
-
-
-botonInicio.addEventListener("click", () => {
-Swal.fire({
-    title:"Inicio de Sesión",
-    html:`
-    <input type="text" id="usuario" class="swal2-input" placeholder="Ingresa tu Usuario"> 
-    <input type="password" id="password" class="swal2-input" placeholder="Ingresa tu Contraseña"> 
-    `,
-    confirmButtonText: "Enviar",
-    showCancelButtonText: true,
-    cancelButtonText: "Cancelar"
-}).then((result) => {
-  if(result.isConfirmed){
-    const usuario = document.getElementById("usuario").value;
-    const password = document.getElementById("password").value;
-    if (usuario === usuarioAutorizado && password === passAutorizado){
-      window.location.href="./index.html";
-  }
-}
-})
-
-});
-
-// Con esta simple alert de Swal puedo probar que suerte no tengo porque tampoco funciona y no tengo idea de porqué
-Swal.fire({
-  title:"Estoy meado por una manada de Rinocerontes"
-});
