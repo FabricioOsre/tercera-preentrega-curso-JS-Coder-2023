@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Concesionaria LAZARO B.</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-ppal">
+      <div class="logo"><img src="./images/lazaro2.jpg" alt="lazaro"></div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Concesionaria Lázaro "B"</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/autos.html">Vehículos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/financiamiento.html">Planes de Financiamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/preguntas.html">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/carrito.html">Carrito <span class="numerito">0</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="SwitchDeColor">
+                <label class="form-check-label text-light" for="SwitchDeColor">Dark Mode</label>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Concesionaria Lázaro B. (La "B" es por barato)</h1>
+      <h4>Somos una pequeña empresa que te ayuda a cumplir tus grandes sueños</h4>
+    </div>
+    <button class="btn btn-primary m-5" id="botonInicio">Iniciar Sesión</button>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Concesionaria LÁZARO B. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./JavaScript/switch-color.js"></script>
+  <script src="../JavaScript/productos.js"></script>
+</body>
+</html>
