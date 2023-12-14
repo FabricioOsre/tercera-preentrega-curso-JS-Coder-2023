@@ -36,13 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-////*********Botón de login - Para ingresar a la pagina de autos*/
+////*********Botón de login para ingresar a la pagina de autos*/
 
 const botonInicio = document.getElementById("botonInicio");
 
 const usuarioAutorizado = "jorge";
 const passAutorizado = "1234";
-
 
 botonInicio.addEventListener("click", () => {
 Swal.fire({
