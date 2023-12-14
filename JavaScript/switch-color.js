@@ -59,7 +59,7 @@ Swal.fire({
     const usuario = document.getElementById("usuario").value;
     const password = document.getElementById("password").value;
     if (usuario === usuarioAutorizado && password === passAutorizado){
-      window.location.href="./index.html";
+      window.location.href="../pages/autos.html";
   }
 }
 })
